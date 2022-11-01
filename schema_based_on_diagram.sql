@@ -3,14 +3,24 @@ CREATE TABLE patients(
     NAME TEXT,
     DATE_OF_BIRTH DATE
 );
+
 CREATE TABLE medical_histories(
     ID SERIAL PRIMARY KEY,
     Admitted_at TIMESTAMP,
     Patient_ID INT REFERENCES patients(ID),
     status varchar(100)
 );
+
  CREATE TABLE treatments(
     ID SERIAL PRIMARY KEY,
     TYPE VARCHAR(100),
     NAME VARCHAR(100)
+);
+
+CREATE TABLE invoices(
+    ID SERIAL PRIMARY KEY,
+    TOTAL_AMOUNT DECIMAL(5,2),
+    GENERATED_AT TIMESTAMP,
+    PAYED_AT TIMESTAMP,
+    MEDICAL_HISTORY_ID INT REFERENCES medical_histories(ID)
 );
