@@ -19,7 +19,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 👤 **Baraka Danny**
 
 - GitHub: [@barakadanny](https://github.com/barakadanny)
-- LinkedIn: [Danny Baraka]](https://www.linkedin.com/in/danny-baraka/)
+- LinkedIn: [Danny Baraka](https://www.linkedin.com/in/danny-baraka/)
 
 ## 🤝 Contributing
 
